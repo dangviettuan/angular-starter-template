@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/dangviettuan/angular-starter-template.svg?branch=master)](https://travis-ci.org/dangviettuan/angular-starter-template)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 # AngularStarterTemplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
