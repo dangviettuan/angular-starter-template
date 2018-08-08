@@ -1,12 +1,12 @@
-.sidenav-container {
+.sidenav-container, .sidenav,.sidenav-content{
   height: 100%;
 }
 
-mat-sidenav-container,
-mat-sidenav-container,
-mat-sidenav {
-  height: 100%;
+.sidenav-container,.sidenav-content{
+  overflow: hidden;
+
 }
+
 
 .sidenav {
   width: 200px;

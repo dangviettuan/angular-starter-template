@@ -12,3 +12,8 @@
 @import "~bootstrap/scss/utilities";
 
 @import "reset";
+
+
+body, html{
+    height: 100%;
+}
