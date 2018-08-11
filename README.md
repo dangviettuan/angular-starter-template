@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/dangviettuan/angular-starter-template.svg?branch=master)](https://travis-ci.org/dangviettuan/angular-starter-template)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![CircleCI](https://circleci.com/gh/dangviettuan/angular-starter-template.svg?style=svg)](https://circleci.com/gh/dangviettuan/angular-starter-template)
+[![dependencies Status](https://david-dm.org/dangviettuan/angular-starter-template/status.svg)](https://david-dm.org/dangviettuan/angular-starter-template)
 
 # AngularStarterTemplate
 
