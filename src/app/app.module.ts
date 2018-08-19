@@ -13,7 +13,9 @@ import { SharedModule } from './shared/shared.module';
 
 export function createApollo(httpLink: HttpLink) {
   return {
-    link: httpLink.create({ uri: 'https://api.example.com/graphql' }),
+    link: httpLink.create({
+      uri: 'https://dangviettuan-graphql.herokuapp.com'
+    }),
     cache: new InMemoryCache()
   };
 }
