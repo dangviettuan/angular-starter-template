@@ -1,0 +1,48 @@
+<div class="signin-container text-center">
+  <form class="form-signin" [formGroup]="loginForm" (ngSubmit)="submitLoging(loginForm.value)">
+
+    <mat-card>
+      <mat-card-content>
+        <img class="mb-4" src="assets/angular.svg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+        <div class="d-flex flex-column">
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Enter your email" formControlName="email" type="email" required>
+            <mat-error>{{getEmailErrorMessage()}}</mat-error>
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Enter your password" formControlName="password" [type]="hide ? 'password' : 'text'" required>
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+            <mat-error>Password is required.</mat-error>
+
+          </mat-form-field>
+          <div class="mb-3">
+            <mat-checkbox color="primary">Remember me</mat-checkbox>
+          </div>
+          <button mat-flat-button color="primary" type="submit">Sign in</button>
+        </div>
+
+
+        <!-- <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button> -->
+        <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+      </mat-card-content>
+    </mat-card>
+  </form>
+
+
+  <!-- <form class="d-flex flex-column">
+    <mat-form-field>
+      <input matInput placeholder="Email" type="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+      <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility' : 'visibility_off'}}</mat-icon>
+    </mat-form-field>
+
+
+  </form> -->
+
+</div>

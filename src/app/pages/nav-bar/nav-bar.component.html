@@ -13,21 +13,27 @@
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <button mat-icon-button>
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="primary">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="accent">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button color="warn">
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
-      <button mat-icon-button disabled>
-        <mat-icon aria-label="Example icon-button with a heart icon">favorite</mat-icon>
-      </button>
+      <div class="d-flex flex-row justify-content-end w-100">
+        <button mat-icon-button>
+          <mat-icon aria-label="Notifications">notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon aria-label="Tasks">date_range</mat-icon>
+        </button>
+        <button [matMenuTriggerFor]="userMenu" mat-icon-button>
+          <mat-icon aria-label="User menu">person</mat-icon>
+        </button>
+        <mat-menu #userMenu="matMenu" overlapTrigger="false">
+          <button mat-menu-item>
+            <mat-icon>perm_contact_calendar</mat-icon>
+            <span>Profile</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>exit_to_app</mat-icon>
+            <span>Logout</span></button>
+        </mat-menu>
+      </div>
+
     </mat-toolbar>
     <ng-content></ng-content>
     <!-- Add Content Here -->
