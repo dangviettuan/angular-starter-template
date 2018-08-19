@@ -8,19 +8,19 @@
 This project include my research and applied.
 
 ## Technologies
-Bootstrap 4: Responsive layout
-Angular Material: UI Components
-Apollo Client (Appllo Angular): A GraphQL client library
+Bootstrap 4: Responsive layout\
+Angular Material: UI Components\
+Apollo Client (Appllo Angular): A GraphQL client library\
 Updating... 
 
 ## Features
-Using GraphQL as backend. Include Authentication, query and CRUD data (In progress)
-Hackernews clone (In progress)
-Integrate ngx-translate (Pendding)
+Using GraphQL as backend. Include Authentication, query and CRUD data (In progress)\
+Hackernews clone (In progress)\
+Integrate ngx-translate (Pendding)\
 And more...
 
 ## CI
-Travis
+Travis\
 CircleCI
 
 ## Host
