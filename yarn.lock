@@ -515,15 +515,18 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
-apollo-angular-link-http-common@~1.1.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/apollo-angular-link-http-common/-/apollo-angular-link-http-common-1.1.1.tgz#fee337e6e30c71699982097b150bfb64877d5614"
-
-apollo-angular-link-http@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/apollo-angular-link-http/-/apollo-angular-link-http-1.1.1.tgz#0b17fdd0bc5bc55d5c595d1880e2559c29b5db3f"
+apollo-angular-link-http-common@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular-link-http-common/-/apollo-angular-link-http-common-1.2.0.tgz#76be0d02478b266dc99d44b54483418e356bd410"
   dependencies:
-    apollo-angular-link-http-common "~1.1.0"
+    tslib "^1.9.0"
+
+apollo-angular-link-http@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular-link-http/-/apollo-angular-link-http-1.2.0.tgz#5eb243e45561032022b5bb9cb2953fc3afaa5418"
+  dependencies:
+    apollo-angular-link-http-common "~1.2.0"
+    tslib "^1.9.0"
 
 apollo-angular@^1.1.2:
   version "1.1.2"
