@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { environment } from '../environments/environment.prod';
+import { CoreModule } from './core/core.module';
 
 export function createApollo(httpLink: HttpLink) {
   return {
@@ -22,6 +24,7 @@ export function createApollo(httpLink: HttpLink) {
 @NgModule({
   declarations: [AppComponent],
   imports: [
+    CoreModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,

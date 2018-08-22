@@ -2,18 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Apollo } from 'apollo-angular/Apollo';
 import gql from 'graphql-tag';
-const submitRepository = gql`
-  mutation {
-    login(email: "dangviettuan1508@gmail.com", password: "123456") {
-    token
-    user {
-      id
-      name
-      email
-    }
-  }
-  }
-`;
+import { AuthService } from '../../core/auth/auth.service';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -21,10 +11,11 @@ const submitRepository = gql`
 })
 export class LoginComponent implements OnInit {
   hide = true;
+  isLoading = false;
 
   loginForm: FormGroup;
 
-  constructor(private apollo: Apollo) {
+  constructor(private authService: AuthService) {
     this.loginForm = new FormGroup({
       email: new FormControl('', [Validators.required, Validators.email]),
       password: new FormControl('', [Validators.required])
@@ -32,9 +23,11 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.apollo.mutate({
-      mutation: submitRepository
-    }).subscribe(res=>console.log(res));
+    // this.apollo
+    //   .mutate({
+    //     mutation: submitRepository
+    //   })
+    //   .subscribe(res => console.log(res));
   }
 
   getEmailErrorMessage() {
@@ -46,6 +39,15 @@ export class LoginComponent implements OnInit {
   }
 
   submitLoging(value) {
-    console.log(value);
+    this.isLoading = true;
+    this.authService.login(value.email, value.password).subscribe(
+      (res: any) => {
+        console.log(res);
+        this.isLoading = false;
+      },
+      error => {
+        this.isLoading = false;
+      }
+    );
   }
 }

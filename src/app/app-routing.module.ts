@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AuthGuard } from './core/auth/auth.guard';
 
 const routes: Routes = [
   {
     path: 'page',
-    loadChildren: './pages/pages.module#PagesModule'
+    loadChildren: './pages/pages.module#PagesModule',
+    canActivate: [AuthGuard]
   },
   {
     path: 'auth',
@@ -18,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}

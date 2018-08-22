@@ -13,7 +13,9 @@ import {
   MatOptionModule,
   MatSelectModule,
   MatInputModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatSnackBarModule,
+  MatProgressSpinnerModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -36,7 +38,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatOptionModule,
     MatSelectModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
   ],
   exports: [
     CommonModule,
@@ -56,7 +60,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatOptionModule,
     MatSelectModule,
     MatInputModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
   ],
   declarations: []
 })

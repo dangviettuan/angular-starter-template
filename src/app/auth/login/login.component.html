@@ -21,7 +21,11 @@
           <div class="mb-3">
             <mat-checkbox color="primary">Remember me</mat-checkbox>
           </div>
-          <button mat-flat-button color="primary" type="submit">Sign in</button>
+          <div *ngIf="isLoading" class="d-flex justify-content-center">
+            <mat-spinner mode="indeterminate"></mat-spinner>
+          </div>
+
+          <button *ngIf="!isLoading" mat-flat-button color="primary" type="submit">Sign in</button>
         </div>
 
 
