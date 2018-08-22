@@ -62,7 +62,7 @@ export class AuthService {
   }
 
   private handleError(error: GraphQLError) {
-    this.snackBar.open(error.message);
+    this.snackBar.open(error.message, 'Close', { duration: 2000 });
     // return an observable with a user-facing error message
     return throwError(error);
   }

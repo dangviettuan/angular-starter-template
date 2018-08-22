@@ -39,15 +39,16 @@ export class LoginComponent implements OnInit {
   }
 
   submitLoging(value) {
-    this.isLoading = true;
-    this.authService.login(value.email, value.password).subscribe(
-      (res: any) => {
-        console.log(res);
-        this.isLoading = false;
-      },
-      error => {
-        this.isLoading = false;
-      }
-    );
+    if (this.loginForm.valid) {
+      this.isLoading = true;
+      this.authService.login(value.email, value.password).subscribe(
+        (res: any) => {
+          this.isLoading = false;
+        },
+        error => {
+          this.isLoading = false;
+        }
+      );
+    }
   }
 }

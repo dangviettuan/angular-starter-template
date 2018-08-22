@@ -10,8 +10,9 @@ import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
-import { environment } from '../environments/environment.prod';
 import { CoreModule } from './core/core.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 export function createApollo(httpLink: HttpLink) {
   return {
@@ -31,7 +32,10 @@ export function createApollo(httpLink: HttpLink) {
     SharedModule,
     HttpClientModule, // provides HttpClient for HttpLink
     ApolloModule,
-    HttpLinkModule
+    HttpLinkModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [
     {
