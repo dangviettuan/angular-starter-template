@@ -543,9 +543,11 @@ apollo-angular-link-http@^1.2.0:
     apollo-angular-link-http-common "~1.2.0"
     tslib "^1.9.0"
 
-apollo-angular@^1.1.2:
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-1.1.2.tgz#7aaad1c996d26b538eea043b825c0ab59fdfe8e5"
+apollo-angular@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/apollo-angular/-/apollo-angular-1.2.0.tgz#0eebb785e1365f473e437c8a738c71d68a07d0f2"
+  dependencies:
+    tslib "^1.9.0"
 
 apollo-cache-inmemory@^1.2.9:
   version "1.2.9"
