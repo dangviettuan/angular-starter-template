@@ -163,9 +163,9 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/language-service@^6.1.4":
-  version "6.1.4"
-  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.1.4.tgz#946a70e1afbf83dbae4c31b64784a5a77ae07e53"
+"@angular/language-service@^6.1.6":
+  version "6.1.6"
+  resolved "https://registry.yarnpkg.com/@angular/language-service/-/language-service-6.1.6.tgz#c9d549abd3f6ffcaad929fb0406b53314dd64ebc"
 
 "@angular/material@^6.4.6":
   version "6.4.6"
