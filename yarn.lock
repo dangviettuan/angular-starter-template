@@ -106,13 +106,6 @@
     rxjs "~6.2.0"
     source-map "^0.5.6"
 
-"@angular-devkit/schematics@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.8.2.tgz#70fe1a9cd47f54ee54d82d540b389682b9aa7177"
-  dependencies:
-    "@angular-devkit/core" "0.8.2"
-    rxjs "~6.2.0"
-
 "@angular-devkit/schematics@0.8.3":
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-0.8.3.tgz#32f2e99b43c39864ec63301963329c9190d7c5d2"
@@ -211,13 +204,13 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/pwa@^0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-0.8.2.tgz#4c9960699b8663bb62b34981b955eb965a931bb1"
+"@angular/pwa@^0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@angular/pwa/-/pwa-0.8.3.tgz#b511f817d2add75bf22b590086a5e0fd998b91aa"
   dependencies:
-    "@angular-devkit/core" "0.8.2"
-    "@angular-devkit/schematics" "0.8.2"
-    "@schematics/angular" "0.8.2"
+    "@angular-devkit/core" "0.8.3"
+    "@angular-devkit/schematics" "0.8.3"
+    "@schematics/angular" "0.8.3"
     typescript "~2.6.2"
 
 "@angular/router@^6.1.8":
@@ -320,14 +313,6 @@
     rxjs "~6.2.0"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
-
-"@schematics/angular@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-0.8.2.tgz#f75978f746a245826b70c214f11b15af7b249838"
-  dependencies:
-    "@angular-devkit/core" "0.8.2"
-    "@angular-devkit/schematics" "0.8.2"
-    typescript ">=2.6.2 <2.10"
 
 "@schematics/angular@0.8.3":
   version "0.8.3"
