@@ -217,10 +217,10 @@
     "@schematics/angular" "0.8.4"
     typescript "~2.6.2"
 
-"@angular/router@^6.1.9":
-  version "6.1.9"
-  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.9.tgz#29869e53442703c53a943ce375cbb0a0f36927fb"
-  integrity sha512-FQksj8DiiWiY9o/1Ppq335Lr3d5wW3Odzg3yWC3JgFN37GMdCQxX71TX5ls8JeVspTiOeP9Lty99vDgfIcl+9A==
+"@angular/router@^6.1.10":
+  version "6.1.10"
+  resolved "https://registry.yarnpkg.com/@angular/router/-/router-6.1.10.tgz#c7ee00897f6659b08378ea08d153d6f4c718004e"
+  integrity sha512-tekI3dkdvd65oMoxjjgRA+16uDgPUBWHhYxids6pgO8vobZNtCo8VaVlcDyLUhdmtS5kONELx0iL5E2M0Y2Bag==
   dependencies:
     tslib "^1.9.0"
 
