@@ -33,7 +33,7 @@
     "@angular/core": "^6.1.10",
     "@angular/forms": "^6.1.10",
     "@angular/http": "^7.0.0",
-    "@angular/material": "^6.4.7",
+    "@angular/material": "^7.0.0",
     "@angular/platform-browser": "^6.1.10",
     "@angular/platform-browser-dynamic": "^6.1.10",
     "@angular/pwa": "^0.8.5",
