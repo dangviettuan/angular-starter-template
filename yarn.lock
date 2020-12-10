@@ -272,12 +272,12 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/service-worker@^7.2.13":
-  version "7.2.13"
-  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-7.2.13.tgz#3d88ef203f470e0ea7162a11c66cb5c6564922e3"
-  integrity sha512-gMDUYtaxQfJtLLLGSuGEjde7z13eFmWPY/xweNa0+HVyGWOOw3GiP+q/1LUhW2f9gNxBR/2QvcWSEcWYLH9Sgg==
+"@angular/service-worker@^11.0.4":
+  version "11.0.4"
+  resolved "https://registry.yarnpkg.com/@angular/service-worker/-/service-worker-11.0.4.tgz#3a55c2684a5b6b5daff2009912291d3d040cb86e"
+  integrity sha512-guRG83kifOVeOviz+lZWgrXHrilBkAj/ovBGqWknKMOfsZPYgUJnGhMaKp/Hc+LTjAQeeZfT2EIcCcuRmfZ5gg==
   dependencies:
-    tslib "^1.9.0"
+    tslib "^2.0.0"
 
 "@babel/code-frame@^7.0.0":
   version "7.5.5"
